@@ -1,0 +1,26 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+	.title{
+	size: 1.2rem;
+	}
+	.btn-d{
+		display: inline;
+		background-color: red;
+		width: 15%;
+		color: white;
+	}
+</style>
+<div class="center-column">
+
+<p class="title">Are you sure you want to delete <b>"{{item}}"</b>?</p>
+
+
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<a class="btn btn-info" href="{% url 'index' %}" >Cancel</a>
+	<input class="btn btn-d" type="submit" name="Confirm">
+</form>
+</div>
