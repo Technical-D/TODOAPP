@@ -11,31 +11,26 @@ Todoapp is a simple Django-based todo application for managing tasks.
 ## Installation
 
 1. Clone the repository:
-
     ```bash
     git clone https://github.com/your-username/todoapp.git
     ```
 
 2. Navigate to the project directory:
-
     ```bash
-    cd todoapp
+    cd todo_app
     ```
 
 3. Install dependencies:
-
     ```bash
     pip install -r requirements.txt
     ```
 
 4. Apply database migrations:
-
     ```bash
     python manage.py migrate
     ```
 
 5. Run the development server:
-
     ```bash
     python manage.py runserver
     ```
